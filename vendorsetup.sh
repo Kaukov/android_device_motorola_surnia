@@ -1,1 +1,1 @@
-add_lunch_combo lineage_surnia-eng
+add_lunch_combo aosp_surnia-eng

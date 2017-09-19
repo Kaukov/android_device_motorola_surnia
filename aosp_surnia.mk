@@ -14,17 +14,15 @@
 # limitations under the License.
 
 $(call inherit-product, device/motorola/surnia/full_surnia.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 540
 TARGET_SCREEN_HEIGHT := 960
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := surnia
-PRODUCT_NAME := lineage_surnia
+PRODUCT_NAME := aosp_surnia
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := surnia
