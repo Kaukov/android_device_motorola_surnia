@@ -19,6 +19,7 @@ DEVICE_PATH := device/motorola/surnia
 include device/motorola/msm8916-common/BoardConfigCommon.mk
 
 TARGET_KERNEL_CONFIG := surnia-mini_defconfig
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -31,3 +32,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5368578048 # 5242752 * 1024 mmcblk0p44
 # TWRP
 DEVICE_RESOLUTION := 540x960
 TW_IGNORE_MAJOR_AXIS_0 := true
+
+# For my broken display
+BOARD_HAS_FLIPPED_SCREEN := true
+RECOVERY_TOUCHSCREEN_FLIP_Y := true
+RECOVERY_TOUCHSCREEN_FLIP_X := true
+
